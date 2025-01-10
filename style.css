@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url(assets/background.JPG);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 30px 60px;
+}
+
+.strip {
+    width: 100%;
+    display: flex;
+    background-color: #ffff;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 80px;
+    padding: 40px;
+    cursor: pointer;
+}
+
+.logo span {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.logo h2{
+    font-size: 45px;
+    font-weight: 200;
+    font-family: "Bebas Neue", serif;
+    color: #222;
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: end;
+    height: 80px;
+    padding: 40px;
+    cursor: pointer;
+}
+
+.menu span {
+    font-size: 40px;
+    font-weight: 600;
+    color: #222;
+}
+
+.header ul {
+    position: absolute;
+    right: -2000px;
+    top: 120px;
+    background: #fff;
+    width: 30%;
+    height: 83vh;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    transition: right 0.5s;
+}
+
+.header ul.active{
+    right: 60px;
+}
+
+ul li {
+    margin: 30px 10px;
+}
+
+ul li a{
+    color: #222;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 200;
+    font-family: "Bebas Neue", serif;
+}
+
+ul img {
+    width: 50%;
+    margin: 50px 0;
+    border-radius: 50%;
+    border: solid 1px #222;
+}
+
+@media (min-width:320px) and (max-width:980px){
+    .header ul {
+        width: 40%;
+    }
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.banner .text {
+    color: #fff;
+}
+
+.banner h3 {
+    font-size: 80px;
+    font-family: "Playwrite AU SA", serif;
+    margin: 10px 0;
+}
+
+.banner h2 {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    margin: 0 5em;
+}

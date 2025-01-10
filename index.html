@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fusionLAB</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--icons-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="strip">
+                <div class="logo">
+                    <!-- <span class="material-symbols-outlined">
+                        content_cut
+                    </span> -->
+                    <h2>fusionLAB</h2>
+                </div>
+                <div id="menu" class="menu">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+            </div>
+            <div class="strip">
+                <!--navbar-->
+                <ul id="nav">
+                    <li><a href="#">Hair</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <img src="assets/logo.JPG" alt="logo">
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="text">
+                <h3>Welcome</h3>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium impedit suscipit consequatur, nostrum eos ab tenetur eveniet explicabo similique amet odio culpa at magni voluptates exercitationem nihil enim odit facilis.</h2>
+            </div>
+        </div>
+    </div>
+    <!--JS-->
+    <script>
+        menu = document.getElementById("menu")
+        nav = document.getElementById("nav")
+
+        menu.addEventListener("click", () => nav.classList.toggle("active"))
+    </script>
+</body>
+
+</html>
